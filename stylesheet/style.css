@@ -78,3 +78,27 @@ body {
   }
   
   /* End Navbar */
+
+  /* Responsive SM */
+
+@media screen and (max-width: 620px) {
+    
+    nav div a img {
+      height: 100px;
+      width: 100px;
+    }
+  
+    #open,
+    #close {
+      height: 44px;
+      margin-right: -100px;
+      margin-top: 100px;
+    }
+  
+    #close {
+      margin-top: 0;
+    }
+  
+  }
+  
+  /* End Responsive SM */
