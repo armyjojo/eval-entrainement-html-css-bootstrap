@@ -1,4 +1,80 @@
 body {
     margin: 0;
+}
+  
+  /* Navbar */
+  
+  #menuburger {
+    font-size: 21px;
+    line-height: 1.6;
+    margin: 0;
+    display: block;
+    position: fixed;
+    transition: transform .4s cubic-bezier(.25, .1, .25, 1);
+  }
+    
+  #menuburger:not(:target) {
+    transform: translate3d(-420px, 0, 0);
+  }
+    
+  #menuburger:target {
+    transform: translate3d(0, 0, 0);
+    background: #198754;
+  }
+    
+  #open,
+  #close {
+    height: 44px;
+    text-align: right;
+    display: block;
+    margin-right: -70px;
+    margin-top: -20px;
+  }
+    
+  #menuburger:target #open,
+  #menuburger:not(:target) #close {
+    display: none;
+  }
+    
+  #menuburger:target #open {
+    display: none;  
+  }
+    
+  .nav-links a {
+    text-decoration: none;
+    display: block;
+  }
+    
+  .navbar {
+    color: #ffc107;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 35px;
+    font-weight: bold;
+    list-style-type: none;
+    width: 500px;
+    padding: 0 20px;
+    display:inline-block;
+    vertical-align:top;
+  }
+    
+  .nav-links {
+    padding: 25px;
   }
   
+  pre {
+    font-weight: bold;
+    font-size: 35px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .nav-links ul li a {
+    color: #ffc107;
+    padding-top: 35px;
+    font-size: 25px;
+  }
+  
+  /* End Navbar */
